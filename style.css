@@ -1,0 +1,10 @@
+body {
+	font-family: tahoma;
+	font-size: 20px;
+}
+
+#display {
+	border: 1px solid black;
+	height: 24px;
+	padding: 2px;
+}
