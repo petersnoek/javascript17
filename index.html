@@ -6,25 +6,44 @@
 </head>
 <body>
 
-<button onclick="Add5()" onmouseover="Over()">5</button>
+<button onclick="Add5()">5</button>
+<button onclick="Add3()">3</button>
+<button onclick="Plus()">+</button>
+<button onclick="Calculate()">=</button>
+
 
 <button onclick="">show x</button>
 
 
 <div id="display"></div>
+<div id="uitkomst"></div>
 
 
 <script>
 
-var x=4;
+var getal1=0;
 
 function Add5() {
-	document.getElementById('display').innerHTML = 5;
+	document.getElementById('display').innerHTML += '5';
 }
 
-function Over() {
-	document.getElementById('display').innerHTML = 4;	
+function Add3() {
+	document.getElementById('display').innerHTML += '3';
 }
+
+function Plus() {
+	getal1 = parseInt(document.getElementById('display').innerHTML);
+	document.getElementById('display').innerHTML = '';
+}
+
+function Calculate() {
+	var getalInDisplay = parseInt(document.getElementById('display').innerHTML);
+
+	var uitkomst = getal1 + getalInDisplay;
+
+	document.getElementById('uitkomst').innerHTML = uitkomst;
+}
+
 
 </script>
 

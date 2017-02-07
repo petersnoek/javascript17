@@ -8,3 +8,10 @@ body {
 	height: 24px;
 	padding: 2px;
 }
+
+#uitkomst {
+	border: 1px solid black;
+	height: 24px;
+	padding: 2px;
+	background-color: lightgreen;
+}
